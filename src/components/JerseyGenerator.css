@@ -1,0 +1,229 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f4c75, #1b6ca8, #0f4c75);
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.trophy {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f4c75;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 32px 16px;
+  background: #f8fafc;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  border: 2px dashed #cbd5e1;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.empty-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.empty-hint {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* Jersey Display */
+.jersey-display {
+  margin-bottom: 24px;
+}
+
+.jersey-card {
+  text-align: center;
+  padding: 28px 16px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.zone-blue  { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+.zone-green { background: linear-gradient(135deg, #dcfce7, #bbf7d0); }
+.zone-gold  { background: linear-gradient(135deg, #fef9c3, #fde68a); }
+
+.jersey-shape {
+  width: 100px;
+  height: 110px;
+  margin: 0 auto 12px;
+  background: white;
+  border-radius: 12px 12px 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 15%, 100% 100%, 0% 100%, 0% 15%);
+}
+
+.jersey-num {
+  font-size: 52px;
+  font-weight: 900;
+  color: #1e293b;
+  line-height: 1;
+}
+
+.zone-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.zone-blue.zone-badge  { background: #1d4ed8; color: #fff; }
+.zone-green.zone-badge { background: #15803d; color: #fff; }
+.zone-gold.zone-badge  { background: #b45309; color: #fff; }
+
+/* Legend Banner */
+.legend-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-radius: 12px;
+  padding: 14px 16px;
+  border: 1.5px solid #f59e0b;
+}
+
+.legend-emoji {
+  font-size: 28px;
+}
+
+.legend-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #92400e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legend-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #78350f;
+  margin-top: 2px;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 8px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-assign {
+  background: linear-gradient(135deg, #0f4c75, #1b6ca8);
+  color: #fff;
+}
+
+.btn-assign:hover { transform: translateY(-2px); }
+
+.btn-reset {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.btn-reset:hover { background: #e2e8f0; }
+
+/* History */
+.history-section {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 16px;
+}
+
+.history-label {
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.history-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.history-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.history-badge.latest {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.zone-blue.history-badge  { background: #bfdbfe; }
+.zone-green.history-badge { background: #bbf7d0; }
+.zone-gold.history-badge  { background: #fde68a; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card { padding: 24px 16px; }
+  .title { font-size: 22px; }
+  .jersey-num { font-size: 42px; }
+  .btn { font-size: 13px; }
+}
