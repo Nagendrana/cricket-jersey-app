@@ -1,16 +1,31 @@
-# React + Vite
+# 🏏 Cricket Jersey Number Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and responsive Cricket Jersey Number Generator built with **React** and **useState** hook.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+👉 [cricket-jersey-app.vercel.app](https://cricket-jersey-app.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📁 Repository
+👉 [github.com/Nagendrana/cricket-jersey-app](https://github.com/Nagendrana/cricket-jersey-app)
 
-## React Compiler
+## ✨ Features
+- Generate random jersey number (1–99)
+- Legend player detection (Dhoni 7, Kohli 18, Rohit 45...)
+- Color zone system (Blue / Green / Gold)
+- Last 5 assigned jerseys history
+- "No jersey assigned yet" before first click
+- Fully responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+- React 
+- useState Hook
+- Vite
+- CSS3
+- Vercel (Deployment)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Restrictions
+- Range: 1 to 99 only
+- No duplicate in last 5 history
+- Legend detection for special numbers
+- "No jersey assigned yet" shown before first generate
